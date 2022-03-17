@@ -1,0 +1,384 @@
+
+html, body {
+	margin: 0;
+	padding: 0;
+
+}
+
+body {
+	background-color: #A52777;
+	font-family: 'Montserrat', sans-serif;
+}
+
+
+.navigation {
+	color: white;
+	height: 50px;
+	font-weight: 200;
+	text-align: center;
+	animation-name: navegacao;
+	animation-duration: 4s;
+}
+
+.navigation ul {
+	margin-top: 0;
+ 	list-style: none;
+ 	padding-left: 0;
+ 	text-align: center;
+ 	line-height: 50px;
+}
+
+.navigation li {
+	display: inline-block;
+	padding-left: 50px;
+	padding-right: 50px;
+	font-weight: 50;
+	
+}
+
+.navigation a {
+	color: white;
+	text-decoration: none;
+}
+
+.navigation a:hover {
+	color: #FF8FA3;
+}
+
+.navigation li.threeline-icon {
+	display: none;
+}
+
+
+.navigation li.threeline-icon:hover {
+	color: #FF8FA3;
+	cursor: pointer; 
+}
+
+
+
+.capa {
+	color: white;
+	text-align: left;
+	padding-top: 200px;
+	padding-left: 250px;
+}
+
+.capa h1 {
+	
+	font-size: 64px;
+	line-height: 10px;
+	font-weight: 100;
+	
+	animation-name: titulo-capa;
+	animation-duration: 4s;
+}
+
+.capa h2 {
+	
+	
+	font-size: 16px;
+	font-weight: 200;
+	margin-top: -10px;
+	
+	animation-name: subtitulo-capa;
+	animation-duration: 4s;
+}
+
+
+.main {
+	padding: 80px 180px 80px 100px;
+
+	animation-name: conteudo;
+	animation-duration: 4s;
+}
+
+}
+
+
+
+.main h1 {
+	color: white;
+	font-weight: normal;
+
+}
+
+
+
+
+.main h2 {
+	color: white;
+	font-size: 16px;
+	text-transform: uppercase;
+	font-weight: 200;
+	margin-top: 40px;
+	margin-bottom: 10px;
+}
+
+
+
+.main h3 {
+	color: #41102E;
+	text-transform: uppercase;
+
+}
+
+
+
+.main p {
+	color: white;
+	font-size: 18px;
+	font-weight: 200;
+	line-height: 24px;
+	text-align: justify;
+	margin-top: -5px;
+}
+
+.caminho {
+	list-style: none;
+	padding-left: 0;
+	color: white;
+	font-size: 12px;
+
+}
+
+.caminho li {
+	display: inline-block;
+
+}
+
+.caminho a {
+	color: white;
+
+}
+
+.habilidades {
+	color: #41102E;
+	text-transform: uppercase;
+	font-weight: 200;
+	font-size: 18px
+
+}
+
+
+.social-img {
+	width: 50px;
+	margin-right: 10px;
+	padding-bottom: 30px;
+}
+
+
+.miniatura {
+	width: 300px;
+	height: 200px;
+	display: inline-block;
+	margin-right: 15px;
+	margin-bottom: 15px;
+	overflow: hidden;
+}
+
+.miniatura a {
+	text-decoration: none;
+}
+
+.blackbox {
+	width: 100%;
+	height: 100%;
+	background-color: #631746;
+	opacity: 0;
+	padding-top: 90px;
+	transition: 1s;
+}
+
+
+.blackbox:hover {
+	opacity: 0.9;
+	transition: 1s;
+}
+
+.blackbox-text {
+	text-align: center;
+}
+
+.blackbox-text h1 {
+	font-size: 16px;
+	color: white;
+	margin-top: 0;
+}
+
+.blackbox-text h2 {
+	text-transform: none;
+	font-weight: 200;
+	margin-top: 0;
+}
+
+
+
+.back-link {
+	color: #41102E;
+	text-decoration: none;
+}
+
+
+@keyframes titulo-capa{
+	0% {opacity: 0; transform: translate(0px,-20px);}
+	100% {opacity: 1; transform: translate(0px,0px);}
+
+}
+
+
+@keyframes subtitulo-capa{
+	0% {opacity: 0; transform: translate(0px,20px);}
+	100% {opacity: 1; transform: translate(0px,0px);}
+
+}
+
+
+@keyframes conteudo {
+	0% {opacity: 0; transform: translate(-20px,0px);}
+	100% {opacity: 1; transform: translate(0px,0px);}
+
+}
+
+
+
+@keyframes navegacao {
+	0% {opacity: 0}
+	50% {opacity: 0}
+	100% {opacity: 1}
+
+}
+
+
+
+@media (max-width: 1000px) {
+
+
+.navigation {
+	margin-right: 0;
+
+
+}
+
+.navigation ul {
+	text-align: right;
+
+}
+
+
+.navigation li {
+	display: none;	
+
+}
+
+.navigation li.threeline-icon {
+	display: inline-block;
+
+}
+
+
+.capa {
+	display: block;
+	height: auto;
+	text-align: center;
+	padding-left: 0px;
+	padding-top: 90px;
+
+}
+
+.capa h1 {
+	width: 100%;
+	line-height: 64px;
+	margin-bottom: 16px;
+	margin-right: 20px;
+}
+
+
+.capa h2 {
+	width: 100%;
+	margin-top: -8px;
+	margin-right: 20px;
+}
+
+
+.main {
+	padding: 10px 3% 40px 3%;
+
+}
+
+
+.main p {
+	text-align: left;
+	line-height: 50px;
+}
+
+
+.caminho li {
+	font-size: 15px;
+}
+
+
+
+.miniatura {
+
+	max-width: 100%;
+	background-size: auto 100%;
+
+}
+
+
+.blackbox {
+	opacity: 0.9;
+	width: 310px;
+	height: 200px;
+	padding-right: 5px;
+	padding-left: 5px;
+}
+
+
+
+
+.menujs {
+	height: 100px;
+	height: auto;
+
+
+}
+
+
+.menujs ul {
+	height: auto;
+	text-align: center;
+	padding-left: 15%;
+	padding-right: 15%;
+	
+
+}
+
+.menujs li {
+	display: block;
+	border-bottom: solid 1px ;
+	width: 100%;
+	padding: 0;
+
+}
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
