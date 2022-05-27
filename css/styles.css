@@ -106,7 +106,7 @@ body {
 
 
 
-.main h2 {
+.titulo h2 {
 	color: white;
 	font-size: 16px;
 	text-transform: uppercase;
@@ -175,6 +175,7 @@ body {
 	margin-bottom: 15px;
 	overflow: hidden;
 	float: left;
+	flex-direction: row;
 }
 
 .miniatura a {
@@ -222,11 +223,22 @@ body {
 
 
 
-.descricaoProjetos h2 {
-	text-transform: lowercase;
-	float: right;
+.descricaoProjetos  {
+	font-size: 18px;
+	width: 100%;
 	color: white;
-	align-items: center;
+	text-transform: none;
+	font-weight: 100;
+	
+}
+
+
+footer {
+	position: absolute;
+    bottom: 2px;
+    line-height: 100px;
+	text-decoration: none;
+	float: left;
 }
 
 
