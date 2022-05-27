@@ -221,9 +221,13 @@ body {
 	float: left;
 }
 
-
+.projeto {
+	display: inline-block;
+	margin-bottom: 20px;
+}
 
 .descricaoProjetos  {
+	margin-left: 20px;
 	font-size: 18px;
 	width: 100%;
 	color: white;
@@ -233,12 +237,14 @@ body {
 }
 
 
-footer {
+.footer {
 	position: absolute;
     bottom: 2px;
+	padding-right: 20px;
     line-height: 100px;
 	text-decoration: none;
 	float: left;
+	
 }
 
 
@@ -386,10 +392,20 @@ footer {
 }
 
 
-
-
-
+.descricaoProjetos  {
+	font-size: 18px;
+	width: 100%;
+	color: white;
+	text-transform: none;
+	font-weight: 100;
+	display: inline-block;
+	padding-right: 5px;
+	
+	
 }
+
+
+
 
 
 
